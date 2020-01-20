@@ -1,0 +1,21 @@
+<mat-card>
+  <mat-card-title>Mapa</mat-card-title>
+
+  <mat-card-content>
+
+    <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
+
+      <agm-marker (markerClick)="selectMarker(infoWindow)" *ngFor="let marker of capitales; let i = index" [latitude]="marker.latwgs84" [longitude]="marker.lonwgs84">
+
+        <agm-info-window #infoWindow>
+          <strong class="colorn">{{ marker.documentName }}</strong>
+          <p class="colorn">{{ marker.territory }}</p>
+          <p class="colorn">{{ marker.touristmDescription }}</p>
+
+        </agm-info-window>
+
+      </agm-marker>
+    </agm-map>
+
+  </mat-card-content>
+</mat-card>
