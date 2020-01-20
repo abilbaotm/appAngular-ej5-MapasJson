@@ -1,5 +1,5 @@
 # IMPORTANTE
-Rellenar el fichero environments/environment.ts con las credenciales de Google Maps JS
+Rellenar el fichero src/environments/environment.ts con las credenciales de Google Maps JS
 
 # EJ06AngularGoogleMaps
 
